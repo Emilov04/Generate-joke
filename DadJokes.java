@@ -25,7 +25,7 @@ public class DadJokes {
             while(scanner.hasNext()){
                 response.append(scanner.nextLine());
             }
-            System.out.println(response);
+
 
             String content = "<meta property=\"og:description\" content=\""; // to find  joke in html format.
 
@@ -34,7 +34,6 @@ public class DadJokes {
 
             while(!joke.contains("/><meta")){
 
-                System.out.println(x);
                 joke += String.valueOf(response.charAt(x));
                 x++;
             }
