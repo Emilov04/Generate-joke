@@ -47,6 +47,9 @@ public class MyFrame extends JFrame implements ActionListener {
              }
              a.insert(curr, "\n");
          }
+         while(a.length() > 130){
+             a = new StringBuilder(DadJokes.main());
+         }
 
          text.setText(String.valueOf(a));
     }
